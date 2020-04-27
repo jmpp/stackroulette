@@ -136,3 +136,107 @@ export const SGBD = [
   { name: 'PouchDB', icon: 'pouchdb.svg', website: 'http://pouchdb.com/' },
   { name: 'SQLite', icon: 'sqlite.svg', website: 'http://www.sqlite.org/' }
 ];
+
+export const BACKEND_ENVIRONMENTS = [
+  {
+    name: 'Node.js',
+    icon: 'nodejs.svg',
+    website: 'https://nodejs.org/',
+    frameworks: [
+      { name: 'Express', icon: 'express.svg', website: '' },
+      { name: 'Koa', icon: 'koa.svg', website: '' },
+      { name: 'Hapi', icon: 'hapi.svg', website: '' },
+      { name: 'Sails', icon: 'sails.svg', website: '' },
+      { name: 'Meteor', icon: 'meteor.svg', website: '' },
+      { name: 'Nest.js', icon: 'nestjs.svg', website: '' },
+      { name: 'FeathersJS', icon: 'feathersjs.svg', website: '' },
+      { name: 'Nodal', icon: 'nodal.svg', website: 'http://www.nodaljs.com/' },
+      {
+        name: 'KeystoneJS',
+        icon: 'keystonejs.svg',
+        website: 'https://www.keystonejs.com/'
+      }
+    ]
+  },
+  {
+    name: 'PHP',
+    icon: 'php.svg',
+    website: 'http://php.net/',
+    frameworks: [
+      { name: 'Laravel', icon: 'laravel.svg', website: '' },
+      { name: 'Symfony', icon: 'symfony.svg', website: '' },
+      { name: 'CodeIgniter', icon: 'codeigniter.svg', website: '' },
+      { name: 'Zend Framework', icon: 'zend-framework.svg', website: '' },
+      {
+        name: 'Slim',
+        icon: 'slim.svg',
+        website: 'http://www.slimframework.com/'
+      },
+      {
+        name: 'Lumen',
+        icon: 'lumen.svg',
+        website: 'https://lumen.laravel.com/'
+      }
+    ]
+  },
+  {
+    name: 'Python',
+    icon: 'python.svg',
+    website: '',
+    frameworks: [
+      { name: 'Django', icon: 'django.svg', website: '' },
+      { name: 'Flask', icon: 'flask.svg', website: 'http://flask.pocoo.org/' },
+      {
+        name: 'AIOHTTP',
+        icon: 'aiohttp.png',
+        website: 'https://docs.aiohttp.org/en/stable/'
+      },
+      {
+        name: 'Bottle.py',
+        icon: 'bottle.png',
+        website: 'https://bottlepy.org/'
+      },
+      {
+        name: 'CherryPy',
+        icon: 'cherrypy.png',
+        website: 'https://cherrypy.org/'
+      }
+    ]
+  },
+  {
+    name: 'Ruby',
+    icon: 'ruby.svg',
+    website: '',
+    frameworks: [
+      { name: 'Rails', icon: 'rails.svg', website: '' },
+      { name: 'Sinatra', icon: 'sinatra.svg', website: '' },
+      {
+        name: 'Grape',
+        icon: 'grape.svg',
+        website: 'http://www.ruby-grape.org/'
+      },
+      { name: 'Hanami', icon: 'hanami.svg', website: 'https://hanamirb.org/' }
+    ]
+  },
+  {
+    name: 'C#',
+    icon: 'c-sharp.svg',
+    website: '',
+    frameworks: [{ name: '.NET', icon: 'dotnet.svg', website: '' }]
+  },
+  {
+    name: 'Java',
+    icon: 'java.svg',
+    website: '',
+    frameworks: [
+      { name: 'Grails', icon: 'grails.svg', website: '' },
+      { name: 'Spark', icon: 'spark.svg', website: '' },
+      { name: 'Spring', icon: 'spring.svg', website: '' },
+      {
+        name: 'Play',
+        icon: 'play.svg',
+        website: 'https://www.playframework.com/'
+      }
+    ]
+  }
+];

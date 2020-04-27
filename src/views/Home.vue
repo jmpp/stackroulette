@@ -48,19 +48,24 @@
             <div class="stack-wrapper">
               <StackItem
                 title="Language/Environment"
-                :item="{
-                  name: 'NodeJS',
-                  icon: 'nodejs.svg',
-                  website: 'https://nodejs.org/en/'
-                }"
+                :item="backend_environment"
+                @dontlike="
+                  () => {
+                    change('backend_environment', BACKEND_ENVIRONMENTS, () => {
+                      change(
+                        'backend_framework',
+                        backend_environment.frameworks
+                      );
+                    });
+                  }
+                "
               />
               <StackItem
                 title="Framework"
-                :item="{
-                  name: 'Express',
-                  icon: 'express.svg',
-                  website: 'http://expressjs.com/'
-                }"
+                :item="backend_framework"
+                @dontlike="
+                  change('backend_framework', backend_environment.frameworks)
+                "
               />
             </div>
           </section>
@@ -93,7 +98,8 @@ import {
   JS_PREPROCESSORS,
   CSS_FRAMEWORKS,
   CSS_PREPROCESSORS,
-  SGBD
+  SGBD,
+  BACKEND_ENVIRONMENTS
 } from '@/stacks.js';
 
 export default {
@@ -108,19 +114,23 @@ export default {
       CSS_FRAMEWORKS,
       CSS_PREPROCESSORS,
       SGBD,
+      BACKEND_ENVIRONMENTS,
 
       jsFramework: null,
       jsPreprocessor: null,
       cssFramework: null,
       cssPreprocessor: null,
-      sgbd: null
+      sgbd: null,
+      backend_environment: null,
+      backend_framework: null
     };
   },
   methods: {
-    change(property, list) {
+    change(property, list, callback) {
       this[property] = null;
       setTimeout(() => {
         this[property] = _sample(list);
+        if (typeof callback === 'function') callback();
       }, 100);
     },
     generateStack() {
@@ -129,6 +139,8 @@ export default {
       this.cssFramework = null;
       this.cssPreprocessor = null;
       this.sgbd = null;
+      this.backend_environment = null;
+      this.backend_framework = null;
 
       setTimeout(() => {
         this.jsFramework = _sample(JS_FRAMEWORKS);
@@ -136,6 +148,8 @@ export default {
         this.cssFramework = _sample(CSS_FRAMEWORKS);
         this.cssPreprocessor = _sample(CSS_PREPROCESSORS);
         this.sgbd = _sample(SGBD);
+        this.backend_environment = _sample(BACKEND_ENVIRONMENTS);
+        this.backend_framework = _sample(this.backend_environment.frameworks);
       }, 250);
     }
   },
@@ -146,7 +160,9 @@ export default {
         this.jsPreprocessor !== null ||
         this.cssFramework !== null ||
         this.cssPreprocessor !== null ||
-        this.sgbd !== null
+        this.sgbd !== null ||
+        this.backend_environment !== null ||
+        this.backend_framework !== null
       );
     }
   },
