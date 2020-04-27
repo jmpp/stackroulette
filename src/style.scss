@@ -1,0 +1,68 @@
+$header-text-color: #277baf;
+$header-title-color: #6cbeff;
+$header-button-color: #6cbeff;
+$header-button-border-color: #78b8f7;
+$header-background-color: #c5eaff;
+
+/**********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap');
+
+/**********************/
+
+.hero-background {
+  position: absolute;
+  background-image: linear-gradient(
+    rgb(255, 255, 255) 0%,
+    $header-background-color 100%
+  );
+  z-index: -2;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 180px;
+  border-bottom-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+}
+
+body {
+  color: $header-text-color;
+}
+
+h1,
+h2 {
+  color: $header-title-color;
+  font-family: 'Fira Code', monospace;
+  letter-spacing: -0.2rem;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 500;
+}
+
+button[id='roll'] {
+  background-color: $header-button-color;
+  border-color: $header-button-border-color;
+  border-radius: 10rem;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+/******************/
+/* Medias-Queries */
+/******************/
+
+@media screen and (max-width: 991px) {
+  .hero-background {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 452px) {
+  .hero-background {
+    height: 220px;
+  }
+}
