@@ -1,4 +1,4 @@
-export const jsFrameworks = [
+export const JS_FRAMEWORKS = [
   { name: 'Angular', icon: 'angular.svg', website: 'https://angular.io' },
   {
     name: 'Backbone',
@@ -32,7 +32,7 @@ export const jsFrameworks = [
   }
 ];
 
-export const jsPreprocessors = [
+export const JS_PREPROCESSORS = [
   {
     name: 'Vanilla JS',
     icon: 'javascript.svg',
@@ -60,7 +60,7 @@ export const jsPreprocessors = [
   }
 ];
 
-export const cssFrameworks = [
+export const CSS_FRAMEWORKS = [
   {
     name: 'Bootstrap',
     icon: 'bootstrap.svg',
@@ -88,7 +88,7 @@ export const cssFrameworks = [
   }
 ];
 
-export const cssPreprocessors = [
+export const CSS_PREPROCESSORS = [
   {
     name: 'Vanilla CSS',
     icon: 'css3.svg',

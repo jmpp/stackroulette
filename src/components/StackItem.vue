@@ -1,14 +1,25 @@
 <template>
   <div class="stack-item">
-    <h1 v-if="title">{{ title }}</h1>
-    <a :href="website" target="_blank" :title="`Visit ${name}'s website`">
-      <img :src="getIcon(icon)" :alt="name" />
-      <h2 :style="`background-color: ${color};`">{{ name }}</h2>
-    </a>
-    <div class="dont-like">
-      Don't like it?
-      <button class="btn btn-link">Change</button>
-    </div>
+    <template v-if="item">
+      <h1 v-if="item.title">{{ item.title }}</h1>
+      <a
+        :href="item.website"
+        target="_blank"
+        :title="`Visit ${item.name}'s website`"
+      >
+        <img :src="getIcon(item.icon)" :alt="item.name" />
+        <h2 :style="`background-color: ${color};`">{{ item.name }}</h2>
+      </a>
+      <div class="dont-like">
+        Don't like it?
+        <button class="btn btn-link" @click="$emit('dontlike', item)">
+          Change
+        </button>
+      </div>
+    </template>
+    <template v-else>
+      <img src="../assets/loader.svg" alt="Loading..." />
+    </template>
   </div>
 </template>
 
@@ -21,17 +32,8 @@ export default {
       type: String,
       required: true
     },
-    name: {
-      type: String,
-      required: true
-    },
-    icon: {
-      type: String,
-      required: true
-    },
-    website: {
-      type: String,
-      required: true
+    item: {
+      type: Object
     }
   },
   name: 'stack-item',

@@ -21,27 +21,23 @@
           <div class="stack-wrapper">
             <StackItem
               title="Language/Compiler"
-              :name="jsPreprocessor.name"
-              :icon="jsPreprocessor.icon"
-              :website="jsPreprocessor.website"
+              :item="jsPreprocessor"
+              @dontlike="change('jsPreprocessor', JS_PREPROCESSORS)"
             />
             <StackItem
               title="JS Framework"
-              :name="jsFramework.name"
-              :icon="jsFramework.icon"
-              :website="jsFramework.website"
+              :item="jsFramework"
+              @dontlike="change('jsFramework', JS_FRAMEWORKS)"
             />
             <StackItem
               title="CSS Preprocessor"
-              :name="cssPreprocessor.name"
-              :icon="cssPreprocessor.icon"
-              :website="cssPreprocessor.website"
+              :item="cssPreprocessor"
+              @dontlike="change('cssPreprocessor', CSS_PREPROCESSORS)"
             />
             <StackItem
               title="CSS Framework"
-              :name="cssFramework.name"
-              :icon="cssFramework.icon"
-              :website="cssFramework.website"
+              :item="cssFramework"
+              @dontlike="change('cssFramework', CSS_FRAMEWORKS)"
             />
           </div>
         </section>
@@ -52,15 +48,19 @@
             <div class="stack-wrapper">
               <StackItem
                 title="Language/Environment"
-                name="NodeJS"
-                icon="nodejs.svg"
-                website="https://nodejs.org/en/"
+                :item="{
+                  name: 'NodeJS',
+                  icon: 'nodejs.svg',
+                  website: 'https://nodejs.org/en/'
+                }"
               />
               <StackItem
                 title="Framework"
-                name="Express"
-                icon="express.svg"
-                website="http://expressjs.com/"
+                :item="{
+                  name: 'Express',
+                  icon: 'express.svg',
+                  website: 'http://expressjs.com/'
+                }"
               />
             </div>
           </section>
@@ -70,9 +70,11 @@
             <div class="stack-wrapper">
               <StackItem
                 title="SGBD"
-                name="PostgreSQL"
-                icon="postgresql.svg"
-                website="https://www.postgresql.org/"
+                :item="{
+                  name: 'PostgreSQL',
+                  icon: 'postgresql.svg',
+                  website: 'https://www.postgresql.org/'
+                }"
               />
             </div>
           </section>
@@ -90,10 +92,10 @@
 import StackItem from '@/components/StackItem.vue';
 import { sample as _sample } from 'lodash';
 import {
-  jsFrameworks,
-  jsPreprocessors,
-  cssFrameworks,
-  cssPreprocessors
+  JS_FRAMEWORKS,
+  JS_PREPROCESSORS,
+  CSS_FRAMEWORKS,
+  CSS_PREPROCESSORS
 } from '@/stacks.js';
 
 export default {
@@ -103,6 +105,11 @@ export default {
   },
   data() {
     return {
+      JS_FRAMEWORKS,
+      JS_PREPROCESSORS,
+      CSS_FRAMEWORKS,
+      CSS_PREPROCESSORS,
+
       jsFramework: null,
       jsPreprocessor: null,
       cssFramework: null,
@@ -110,6 +117,12 @@ export default {
     };
   },
   methods: {
+    change(property, list) {
+      this[property] = null;
+      setTimeout(() => {
+        this[property] = _sample(list);
+      }, 100);
+    },
     generateStack() {
       this.jsFramework = null;
       this.jsPreprocessor = null;
@@ -117,19 +130,19 @@ export default {
       this.cssPreprocessor = null;
 
       setTimeout(() => {
-        this.jsFramework = _sample(jsFrameworks);
-        this.jsPreprocessor = _sample(jsPreprocessors);
-        this.cssFramework = _sample(cssFrameworks);
-        this.cssPreprocessor = _sample(cssPreprocessors);
+        this.jsFramework = _sample(JS_FRAMEWORKS);
+        this.jsPreprocessor = _sample(JS_PREPROCESSORS);
+        this.cssFramework = _sample(CSS_FRAMEWORKS);
+        this.cssPreprocessor = _sample(CSS_PREPROCESSORS);
       }, 250);
     }
   },
   computed: {
     generated() {
       return (
-        this.jsFramework !== null &&
-        this.jsPreprocessor !== null &&
-        this.cssFramework !== null &&
+        this.jsFramework !== null ||
+        this.jsPreprocessor !== null ||
+        this.cssFramework !== null ||
         this.cssPreprocessor !== null
       );
     }
