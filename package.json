@@ -10,6 +10,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.4",
+    "lodash": "^4.17.15",
     "splashy": "^5.0.2",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"

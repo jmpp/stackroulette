@@ -20,7 +20,7 @@ $header-background-color: #c5eaff;
   top: 0;
   left: 0;
   right: 0;
-  height: 180px;
+  height: 120px;
   border-bottom-left-radius: 50% 25%;
   border-bottom-right-radius: 50% 25%;
 }
@@ -49,20 +49,41 @@ button[id='roll'] {
 }
 
 main {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #333;
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: -0.15rem;
 }
 
 /******************/
 /* Medias-Queries */
 /******************/
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .hero-background {
-    height: 200px;
+    height: 130px;
   }
 }
-@media screen and (max-width: 452px) {
+@media screen and (max-width: 442px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
   .hero-background {
-    height: 220px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 353px) {
+  .hero-background {
+    height: 190px;
   }
 }

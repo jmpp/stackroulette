@@ -1,5 +1,6 @@
 <template>
   <div class="stack-item">
+    <h1 v-if="title">{{ title }}</h1>
     <a :href="website" target="_blank" :title="`Visit ${name}'s website`">
       <img :src="getIcon(icon)" :alt="name" />
       <h2 :style="`background-color: ${color};`">{{ name }}</h2>
@@ -16,6 +17,10 @@ import splashy from 'splashy';
 
 export default {
   props: {
+    title: {
+      type: String,
+      required: true
+    },
     name: {
       type: String,
       required: true
@@ -37,7 +42,7 @@ export default {
   },
   methods: {
     getIcon(pic) {
-      let imageBody = require(`../assets/${pic}`);
+      let imageBody = require(`../assets/icons/${pic}`);
 
       splashy(imageBody).then(
         ([dominantColor]) => (this.color = dominantColor)
@@ -54,6 +59,13 @@ export default {
   text-align: center;
   position: relative;
   z-index: 1;
+  margin: 0.35rem;
+}
+.stack-item h1 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: -0.1rem;
+  color: #333;
 }
 .stack-item > a {
   display: flex;
@@ -79,6 +91,7 @@ export default {
 }
 .stack-item img {
   max-height: 100px;
+  min-height: 90px;
   min-width: 100px;
   max-width: 200px;
   align-self: center;

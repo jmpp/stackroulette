@@ -1,40 +1,48 @@
 <template>
   <div class="home">
-    <p class="text-center">
-      Not sure about the stack of your future project? Just hit the button below
-      and see what will be your next stack 😎
-    </p>
+    <div class="text-center">
+      <p>
+        Not sure about what to use for your new project? Don't worry, we'll take
+        care of this 👌
+      </p>
+    </div>
+
+    <h2 class="subtitle">Here's a new stack for you:</h2>
 
     <div class="text-center">
-      <button id="roll" class="btn btn-primary">
-        🎯 Generate a fresh new stack!
+      <button id="roll" class="btn btn-primary" @click="generateStack">
+        👎 Don't like it? <strong>Generate another one!</strong>
       </button>
     </div>
 
     <main>
-      <div id="result">
+      <div id="result" v-if="generated">
         <section class="stack stack-frontend">
           <h1>Front-End</h1>
           <div class="stack-wrapper">
             <StackItem
-              name="Angular"
-              icon="angular.svg"
-              website="https://angular.io"
+              title="Language/Compiler"
+              :name="jsPreprocessor.name"
+              :icon="jsPreprocessor.icon"
+              :website="jsPreprocessor.website"
             />
             <StackItem
-              name="TypeScript"
-              icon="typescript-icon.svg"
-              website="https://www.typescriptlang.org/"
+              title="JS Framework"
+              :name="jsFramework.name"
+              :icon="jsFramework.icon"
+              :website="jsFramework.website"
             />
             <StackItem
-              name="Materialize"
-              icon="materialize.svg"
-              website="https://materializecss.com/"
+              title="CSS Preprocessor"
+              :name="cssPreprocessor.name"
+              :icon="cssPreprocessor.icon"
+              :website="cssPreprocessor.website"
             />
             <StackItem
-              name="Sass"
-              icon="sass.svg"
-              website="https://sass-lang.com/"
+              title="CSS Framework"
+              :name="cssFramework.name"
+              :icon="cssFramework.icon"
+              :website="cssFramework.website"
             />
           </div>
         </section>
@@ -44,11 +52,13 @@
             <h1>Back-End</h1>
             <div class="stack-wrapper">
               <StackItem
+                title="Language/Environment"
                 name="NodeJS"
                 icon="nodejs.svg"
                 website="https://nodejs.org/en/"
               />
               <StackItem
+                title="Framework"
                 name="Express"
                 icon="express.svg"
                 website="http://expressjs.com/"
@@ -60,6 +70,7 @@
             <h1>Database</h1>
             <div class="stack-wrapper">
               <StackItem
+                title="SGBD"
                 name="PostgreSQL"
                 icon="postgresql.svg"
                 website="https://www.postgresql.org/"
@@ -75,11 +86,54 @@
 
 <script>
 import StackItem from '@/components/StackItem.vue';
+import { sample as _sample } from 'lodash';
+import {
+  jsFrameworks,
+  jsPreprocessors,
+  cssFrameworks,
+  cssPreprocessors
+} from '@/stacks.js';
 
 export default {
   name: 'Home',
   components: {
     StackItem
+  },
+  data() {
+    return {
+      jsFramework: null,
+      jsPreprocessor: null,
+      cssFramework: null,
+      cssPreprocessor: null
+    };
+  },
+  methods: {
+    generateStack() {
+      this.jsFramework = null;
+      this.jsPreprocessor = null;
+      this.cssFramework = null;
+      this.cssPreprocessor = null;
+
+      setTimeout(() => {
+        this.jsFramework = _sample(jsFrameworks);
+        this.jsPreprocessor = _sample(jsPreprocessors);
+        this.cssFramework = _sample(cssFrameworks);
+        this.cssPreprocessor = _sample(cssPreprocessors);
+      }, 150);
+    }
+  },
+  computed: {
+    generated() {
+      return (
+        this.jsFramework !== null &&
+        this.jsPreprocessor !== null &&
+        this.cssFramework !== null &&
+        this.cssPreprocessor !== null
+      );
+    }
+  },
+  created() {
+    this.generateStack();
   }
 };
 </script>
@@ -120,12 +174,12 @@ $stack-background-color: rgb(227, 245, 255);
     $stack-background-color 50%,
     rgb(255, 255, 255) 100%
   );
-  border: 1px solid $stack-border-color;
+  border: 1px dashed $stack-border-color;
   padding: 2rem;
   border-radius: 0.1875rem;
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .stack-frontend::after,
