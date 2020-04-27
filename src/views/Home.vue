@@ -14,7 +14,6 @@
         👎 Don't like it? <strong>Generate another one!</strong>
       </button>
     </div>
-
     <main>
       <div id="result" v-if="generated">
         <section class="stack stack-frontend">
@@ -80,6 +79,9 @@
         </div>
       </div>
       <!-- #result -->
+      <div v-else class="text-center">
+        <img src="../assets/loader.svg" alt="Loading..." width="80" />
+      </div>
     </main>
   </div>
 </template>
@@ -119,7 +121,7 @@ export default {
         this.jsPreprocessor = _sample(jsPreprocessors);
         this.cssFramework = _sample(cssFrameworks);
         this.cssPreprocessor = _sample(cssPreprocessors);
-      }, 150);
+      }, 250);
     }
   },
   computed: {
