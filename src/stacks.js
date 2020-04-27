@@ -112,3 +112,27 @@ export const CSS_PREPROCESSORS = [
     website: 'https://postcss.org/'
   }
 ];
+
+export const SGBD = [
+  { name: 'MongoDB', icon: 'mongodb.svg', website: 'https://www.mongodb.org/' },
+  { name: 'MariaDB', icon: 'mariadb.svg', website: 'https://mariadb.org/' },
+  { name: 'MySQL', icon: 'mysql.svg', website: 'http://dev.mysql.com/' },
+  {
+    name: 'PostgreSQL',
+    icon: 'postgresql.svg',
+    website: 'http://www.postgresql.org/'
+  },
+  { name: 'Redis', icon: 'redis.svg', website: 'http://redis.io/' },
+  {
+    name: 'Cassandra',
+    icon: 'cassandra.svg',
+    website: 'http://cassandra.apache.org/'
+  },
+  {
+    name: 'CouchDB',
+    icon: 'couchdb.svg',
+    website: 'http://couchdb.apache.org/'
+  },
+  { name: 'PouchDB', icon: 'pouchdb.svg', website: 'http://pouchdb.com/' },
+  { name: 'SQLite', icon: 'sqlite.svg', website: 'http://www.sqlite.org/' }
+];

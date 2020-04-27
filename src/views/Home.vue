@@ -2,7 +2,7 @@
   <div class="home">
     <div class="text-center">
       <p>
-        Not sure about what to use for your new project? Don't worry, we'll take
+        Not sure about what to use for your new webapp? Don't worry, we'll take
         care of this 👌
       </p>
     </div>
@@ -70,11 +70,8 @@
             <div class="stack-wrapper">
               <StackItem
                 title="SGBD"
-                :item="{
-                  name: 'PostgreSQL',
-                  icon: 'postgresql.svg',
-                  website: 'https://www.postgresql.org/'
-                }"
+                :item="sgbd"
+                @dontlike="change('sgbd', SGBD)"
               />
             </div>
           </section>
@@ -95,7 +92,8 @@ import {
   JS_FRAMEWORKS,
   JS_PREPROCESSORS,
   CSS_FRAMEWORKS,
-  CSS_PREPROCESSORS
+  CSS_PREPROCESSORS,
+  SGBD
 } from '@/stacks.js';
 
 export default {
@@ -109,11 +107,13 @@ export default {
       JS_PREPROCESSORS,
       CSS_FRAMEWORKS,
       CSS_PREPROCESSORS,
+      SGBD,
 
       jsFramework: null,
       jsPreprocessor: null,
       cssFramework: null,
-      cssPreprocessor: null
+      cssPreprocessor: null,
+      sgbd: null
     };
   },
   methods: {
@@ -128,12 +128,14 @@ export default {
       this.jsPreprocessor = null;
       this.cssFramework = null;
       this.cssPreprocessor = null;
+      this.sgbd = null;
 
       setTimeout(() => {
         this.jsFramework = _sample(JS_FRAMEWORKS);
         this.jsPreprocessor = _sample(JS_PREPROCESSORS);
         this.cssFramework = _sample(CSS_FRAMEWORKS);
         this.cssPreprocessor = _sample(CSS_PREPROCESSORS);
+        this.sgbd = _sample(SGBD);
       }, 250);
     }
   },
@@ -143,7 +145,8 @@ export default {
         this.jsFramework !== null ||
         this.jsPreprocessor !== null ||
         this.cssFramework !== null ||
-        this.cssPreprocessor !== null
+        this.cssPreprocessor !== null ||
+        this.sgbd !== null
       );
     }
   },
