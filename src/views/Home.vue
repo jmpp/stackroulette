@@ -8,8 +8,8 @@
 
     <div class="text-center">
       <p>
-        Not sure about what to use for your new webapp? Don't worry, we'll take
-        care of this 👌
+        Not sure about what technologies to use for your new webapp? Leave it to
+        chance 🍀
       </p>
     </div>
 

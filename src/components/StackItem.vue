@@ -78,7 +78,7 @@ export default {
 .stack-item > a:hover,
 .stack-item > a:visited {
   text-decoration: none;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .stack-item h2 {
   color: #fff;
