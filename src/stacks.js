@@ -143,13 +143,25 @@ export const BACKEND_ENVIRONMENTS = [
     icon: 'nodejs.svg',
     website: 'https://nodejs.org/',
     frameworks: [
-      { name: 'Express', icon: 'express.svg', website: '' },
-      { name: 'Koa', icon: 'koa.svg', website: '' },
-      { name: 'Hapi', icon: 'hapi.svg', website: '' },
-      { name: 'Sails', icon: 'sails.svg', website: '' },
-      { name: 'Meteor', icon: 'meteor.svg', website: '' },
-      { name: 'Nest.js', icon: 'nestjs.svg', website: '' },
-      { name: 'FeathersJS', icon: 'feathersjs.svg', website: '' },
+      {
+        name: 'Express',
+        icon: 'express.svg',
+        website: 'http://expressjs.com/'
+      },
+      { name: 'Koa', icon: 'koa.svg', website: 'https://koajs.com/' },
+      { name: 'Hapi', icon: 'hapi.svg', website: 'http://hapijs.com/' },
+      { name: 'Sails', icon: 'sails.svg', website: 'http://sailsjs.org/' },
+      {
+        name: 'Meteor',
+        icon: 'meteor.svg',
+        website: 'https://www.meteor.com/'
+      },
+      { name: 'Nest.js', icon: 'nestjs.svg', website: 'https://nestjs.com/' },
+      {
+        name: 'Feathers',
+        icon: 'feathersjs.svg',
+        website: 'https://feathersjs.com/'
+      },
       { name: 'Nodal', icon: 'nodal.svg', website: 'http://www.nodaljs.com/' },
       {
         name: 'KeystoneJS',
@@ -163,10 +175,18 @@ export const BACKEND_ENVIRONMENTS = [
     icon: 'php.svg',
     website: 'http://php.net/',
     frameworks: [
-      { name: 'Laravel', icon: 'laravel.svg', website: '' },
-      { name: 'Symfony', icon: 'symfony.svg', website: '' },
-      { name: 'CodeIgniter', icon: 'codeigniter.svg', website: '' },
-      { name: 'Zend Framework', icon: 'zend-framework.svg', website: '' },
+      { name: 'Laravel', icon: 'laravel.svg', website: 'http://laravel.com/' },
+      { name: 'Symfony', icon: 'symfony.svg', website: 'https://symfony.com/' },
+      {
+        name: 'CodeIgniter',
+        icon: 'codeigniter.svg',
+        website: 'http://www.codeigniter.com/'
+      },
+      {
+        name: 'Zend Framework',
+        icon: 'zend-framework.svg',
+        website: 'http://framework.zend.com/'
+      },
       {
         name: 'Slim',
         icon: 'slim.svg',
@@ -182,9 +202,13 @@ export const BACKEND_ENVIRONMENTS = [
   {
     name: 'Python',
     icon: 'python.svg',
-    website: '',
+    website: 'https://www.python.org/',
     frameworks: [
-      { name: 'Django', icon: 'django.svg', website: '' },
+      {
+        name: 'Django',
+        icon: 'django.svg',
+        website: 'https://www.djangoproject.com/'
+      },
       { name: 'Flask', icon: 'flask.svg', website: 'http://flask.pocoo.org/' },
       {
         name: 'AIOHTTP',
@@ -192,24 +216,59 @@ export const BACKEND_ENVIRONMENTS = [
         website: 'https://docs.aiohttp.org/en/stable/'
       },
       {
-        name: 'Bottle.py',
-        icon: 'bottle.png',
+        name: 'Bottle',
+        icon: 'bottle.svg',
         website: 'https://bottlepy.org/'
       },
       {
         name: 'CherryPy',
-        icon: 'cherrypy.png',
+        icon: 'cherrypy.svg',
         website: 'https://cherrypy.org/'
-      }
+      },
+      {
+        name: 'Falcon',
+        icon: 'falcon.svg',
+        website: 'https://falcon.readthedocs.io/en/stable/'
+      },
+      {
+        name: 'Growler',
+        icon: 'growler.png',
+        website: 'https://pypi.org/project/growler/'
+      },
+      {
+        name: 'Hug',
+        icon: 'hug.png',
+        website: 'https://www.hug.rest/'
+      },
+      {
+        name: 'Pyramid',
+        icon: 'pyramid.png',
+        website: 'https://trypyramid.com/'
+      },
+      {
+        name: 'Tornado',
+        icon: 'tornado.svg',
+        website: 'https://www.tornadoweb.org/'
+      },
+      {
+        name: 'TurboGears',
+        icon: 'turbogears.png',
+        website: 'https://www.turbogears.org/'
+      },
+      { name: 'web2py', icon: 'web2py.png', website: 'http://web2py.com/' }
     ]
   },
   {
     name: 'Ruby',
     icon: 'ruby.svg',
-    website: '',
+    website: 'https://www.ruby-lang.org/',
     frameworks: [
-      { name: 'Rails', icon: 'rails.svg', website: '' },
-      { name: 'Sinatra', icon: 'sinatra.svg', website: '' },
+      { name: 'Rails', icon: 'rails.svg', website: 'https://rubyonrails.org/' },
+      {
+        name: 'Sinatra',
+        icon: 'sinatra.svg',
+        website: 'http://sinatrarb.com/'
+      },
       {
         name: 'Grape',
         icon: 'grape.svg',
@@ -221,17 +280,23 @@ export const BACKEND_ENVIRONMENTS = [
   {
     name: 'C#',
     icon: 'c-sharp.svg',
-    website: '',
-    frameworks: [{ name: '.NET', icon: 'dotnet.svg', website: '' }]
+    website: 'https://docs.microsoft.com/en-us/dotnet/csharp/',
+    frameworks: [
+      {
+        name: 'ASP.NET',
+        icon: 'dotnet.svg',
+        website: 'https://dotnet.microsoft.com/apps/aspnet'
+      }
+    ]
   },
   {
     name: 'Java',
     icon: 'java.svg',
-    website: '',
+    website: 'https://www.java.com/',
     frameworks: [
-      { name: 'Grails', icon: 'grails.svg', website: '' },
-      { name: 'Spark', icon: 'spark.svg', website: '' },
-      { name: 'Spring', icon: 'spring.svg', website: '' },
+      { name: 'Grails', icon: 'grails.svg', website: 'https://grails.org/' },
+      { name: 'Spark', icon: 'spark.svg', website: 'http://sparkjava.com/' },
+      { name: 'Spring', icon: 'spring.svg', website: 'https://spring.io/' },
       {
         name: 'Play',
         icon: 'play.svg',
