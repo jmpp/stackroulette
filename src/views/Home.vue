@@ -115,6 +115,8 @@ export default {
   },
   data() {
     return {
+      confettimer: null,
+
       JS_FRAMEWORKS,
       JS_PREPROCESSORS,
       CSS_FRAMEWORKS,
@@ -140,6 +142,11 @@ export default {
       }, 100);
     },
     generateStack() {
+      // this.$confetti.stop();
+
+      // clearTimeout(this.confettimer);
+      // this.confettimer = setTimeout(() => this.$confetti.stop(), 1500);
+
       this.jsFramework = null;
       this.jsPreprocessor = null;
       this.cssFramework = null;
@@ -172,8 +179,12 @@ export default {
       );
     }
   },
-  created() {
+  mounted() {
     this.generateStack();
+    setTimeout(() => {
+      this.$confetti.start();
+      setTimeout(() => this.$confetti.stop(), 2000);
+    }, 1000);
   }
 };
 </script>
