@@ -3,10 +3,10 @@ $header-title-color: #6cbeff;
 $header-button-color: #6cbeff;
 $header-button-border-color: #78b8f7;
 $header-background-color: #c5eaff;
-
+$link-color: #6cbeff;
 /**********************/
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap');
 
 /**********************/
 
@@ -27,6 +27,9 @@ $header-background-color: #c5eaff;
 
 body {
   color: $header-text-color;
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+  letter-spacing: -0.08rem;
 }
 
 h1,
@@ -42,6 +45,11 @@ h2 {
   font-weight: 500;
 }
 
+a:link,
+a:visited {
+  color: $link-color;
+}
+
 button[id='roll'] {
   background-color: $header-button-color;
   border-color: $header-button-border-color;
@@ -50,6 +58,12 @@ button[id='roll'] {
 
 main {
   margin-top: 0.5rem;
+}
+
+nav {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
 }
 
 .subtitle {

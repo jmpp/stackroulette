@@ -100,7 +100,9 @@ export default {
 }
 .stack-item .dont-like {
   font-size: 0.7rem;
+  letter-spacing: 0;
   color: #808080;
+  font-family: sans-serif;
 }
 .stack-item .dont-like > button {
   font-size: 0.7rem;

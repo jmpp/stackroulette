@@ -1,5 +1,11 @@
 <template>
   <div class="home">
+    <nav>
+      <router-link er-link to="/about" class="btn btn-info text-light">
+        About
+      </router-link>
+    </nav>
+
     <div class="text-center">
       <p>
         Not sure about what to use for your new webapp? Don't worry, we'll take
