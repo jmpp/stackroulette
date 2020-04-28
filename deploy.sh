@@ -10,7 +10,7 @@ npm run build
 cd dist
 
 # deploying to a custom domain
-# echo 'stackroulette.dev' > CNAME
+echo 'stackroulette.dev' > CNAME
 
 git init
 git add -A
