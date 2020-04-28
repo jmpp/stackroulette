@@ -1,7 +1,8 @@
 {
   "name": "stackroulette",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "license": "GNU GPLv3",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
