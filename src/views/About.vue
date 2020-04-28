@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <nav>
-      <router-link er-link to="/" class="btn btn-info text-light">
+      <router-link to="/" class="btn btn-info text-light">
         « Back
       </router-link>
     </nav>

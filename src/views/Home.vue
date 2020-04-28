@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <nav>
-      <router-link er-link to="/about" class="btn btn-info text-light">
+      <router-link to="/about" class="btn btn-info text-light">
         About
       </router-link>
     </nav>
