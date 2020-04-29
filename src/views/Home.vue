@@ -227,7 +227,7 @@ $stack-background-color: rgb(227, 245, 255);
   border-radius: 0.1875rem;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: stretch;
 }
 
 .stack-frontend::after,

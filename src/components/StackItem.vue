@@ -1,7 +1,7 @@
 <template>
   <div class="stack-item">
     <template v-if="item">
-      <h1 v-if="item.title">{{ item.title }}</h1>
+      <h1 v-if="title">{{ title }}</h1>
       <a
         :href="item.website"
         target="_blank"
@@ -68,6 +68,9 @@ export default {
   font-size: 1.2rem;
   letter-spacing: -0.1rem;
   color: #333;
+  font-style: italic;
+  align-self: flex-start;
+  margin-bottom: 2rem;
 }
 .stack-item > a {
   display: flex;
