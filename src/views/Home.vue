@@ -1,19 +1,13 @@
 <template>
   <div class="home">
-    <nav>
-      <router-link to="/about" class="btn btn-info text-light">
-        About
-      </router-link>
-    </nav>
-
     <div class="text-center">
       <p>
-        Not sure about what technologies to use for your new webapp? Leave it to
-        chance 🍀
+        Not sure about what technologies to use for your new webapp?
+        <span class="text-nowrap">Leave it to chance 🍀</span>
       </p>
     </div>
 
-    <h2 class="subtitle">Here's a new stack for you:</h2>
+    <h2 class="sub-title text-nowrap">Here's a new stack for you:</h2>
 
     <div class="text-center">
       <button id="roll" class="btn btn-primary" @click="generateStack">
@@ -90,7 +84,7 @@
       </div>
       <!-- #result -->
       <div v-else class="text-center">
-        <img src="../assets/loader.svg" alt="Loading..." width="80" />
+        <img src="../assets/roulette.svg" alt="Loading..." width="80" />
       </div>
     </main>
   </div>
@@ -263,13 +257,20 @@ $stack-background-color: rgb(227, 245, 255);
 
 @media screen and (max-width: 767px) {
   #result {
+    margin-top: 2rem;
     transform: scale(0.95);
   }
   .stack-wrapper {
     flex-wrap: wrap;
+    > div {
+      flex: 1;
+    }
   }
 }
 @media screen and (max-width: 512px) {
+  .stack-wrapper {
+    flex-direction: column;
+  }
   .stack-backend-container {
     flex-direction: column;
     justify-content: center;

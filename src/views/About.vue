@@ -1,12 +1,7 @@
 <template>
   <div class="about">
-    <nav>
-      <router-link to="/" class="btn btn-info text-light">
-        « Back
-      </router-link>
-    </nav>
     <div class="text-center">
-      <h2 class="subtitle mt-0">
+      <h2 class="sub-title mt-0">
         About StackRoulette
       </h2>
       <p>
@@ -38,7 +33,7 @@
         >
       </p>
       <hr />
-      <div class="d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-wrap justify-content-center align-items-center">
         <div class="m-3">
           © Copyright 2020 - Jean-Marie CLÉRY
         </div>
@@ -65,7 +60,7 @@
           >
         </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-wrap justify-content-center align-items-center">
         <div class="m-3">
           Icons in courtesy of
           <a href="https://svgporn.com/" target="_blank">SVGPorn</a>
@@ -74,3 +69,9 @@
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+p:first-of-type {
+  margin-top: 4rem;
+}
+</style>

@@ -18,7 +18,7 @@
       </div>
     </template>
     <template v-else>
-      <img src="../assets/loader.svg" alt="Loading..." />
+      <img src="../assets/roulette.svg" alt="Loading..." />
     </template>
   </div>
 </template>
@@ -74,6 +74,7 @@ export default {
   flex-direction: column;
   transform: scale(1);
   transition: transform 0.2s;
+  margin-bottom: 0.3rem;
 }
 .stack-item > a:hover,
 .stack-item > a:visited {
@@ -90,6 +91,8 @@ export default {
   text-align: center;
   letter-spacing: -0.15rem;
   font-weight: 300;
+  white-space: nowrap;
+  align-self: center;
 }
 .stack-item img {
   max-height: 100px;
@@ -99,14 +102,24 @@ export default {
   align-self: center;
 }
 .stack-item .dont-like {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: 0;
   color: #808080;
   font-family: sans-serif;
 }
 .stack-item .dont-like > button {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   vertical-align: baseline;
   padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0;
+  letter-spacing: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .stack-item {
+    margin-bottom: 1rem;
+  }
 }
 </style>
