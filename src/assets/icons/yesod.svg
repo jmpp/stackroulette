@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="871.42853"
+   height="474.28568"
+   id="yesod-logo-with-text"
+   version="1.1"
+   inkscape:version="0.48+devel r10105"
+   sodipodi:docname="yesod-logo.svg">
+  <title
+     id="theTitle">Yesod Logo with Text</title>
+  <defs
+     id="definitions">
+    <filter
+       inkscape:collect="always"
+       id="gaussianFilter"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="5.4680548"
+         id="feGaussianBlur1344" />
+    </filter>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="maskOfY">
+      <path
+         style="fill:#96abc9;fill-opacity:1;stroke:none"
+         d="m 272.79339,420.69077 -56.85088,0.0638 84.84198,127.37553 -84.84198,127.53644 55.1135,0 170.07004,-254.91197 -54.18046,0 -56.27176,84.64889 z"
+         id="pathForMaskOfY"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccccccc" />
+    </mask>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-177.83838"
+     inkscape:cy="-138.47491"
+     inkscape:document-units="px"
+     inkscape:current-layer="logoLayer"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1362"
+     inkscape:window-height="724"
+     inkscape:window-x="0"
+     inkscape:window-y="138"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="yesodLogoMetadata">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Yesod Logo with Text</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Cies Breijs</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>CC-SA-BY</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:language>English</dc:language>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Cies Breijs</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Logo Layer"
+     inkscape:groupmode="layer"
+     id="logoLayer"
+     transform="translate(-91.428574,-381.21933)">
+    <g
+       id="logo"
+       transform="translate(168.82164,20.203051)">
+      <g
+         id="darkBluePieces">
+        <path
+           style="fill:#29374e;fill-opacity:1;stroke:none"
+           d="m 135.14111,420.78405 84.82311,127.41091 -84.96666,127.39161 55.14166,0.0484 L 275.1099,548.195 190.07487,420.7229 z"
+           id="greaterThanSymbol"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccc" />
+        <g
+           id="stackPieces">
+          <path
+             sodipodi:nodetypes="ccccc"
+             inkscape:connector-curvature="0"
+             id="topOfStack"
+             d="m 408.98455,507.49534 -28.24848,42.43703 112.02873,0 28.24849,-42.43703 z"
+             style="fill:#29374e;fill-opacity:1;stroke:none" />
+          <path
+             style="fill:#29374e;fill-opacity:1;stroke:none"
+             d="m 367.09443,570.33048 -28.21631,42.37278 194.93506,0 28.21631,-42.37278 z"
+             id="middleOfStack"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="ccccc" />
+          <path
+             style="fill:#29374e;fill-opacity:1;stroke:none"
+             d="m 603.72134,633.26218 -278.54921,0 -28.28066,42.43708 278.51704,0 z"
+             id="bottomOfStack"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="ccccc" />
+        </g>
+      </g>
+      <g
+         id="lightBlueY">
+        <path
+           sodipodi:nodetypes="ccccccccc"
+           inkscape:connector-curvature="0"
+           id="theY"
+           d="m 272.79339,420.69077 -56.85088,0.0638 84.84198,127.37553 -84.84198,127.53644 55.1135,0 170.07004,-254.91197 -54.18046,0 -56.27176,84.64889 z"
+           style="fill:#96abc9;fill-opacity:1;stroke:none" />
+        <path
+           style="fill:#000000;fill-opacity:0.34841632;stroke:none;filter:url(#gaussianFilter)"
+           d="m 189.14609,398.49514 0,295.5 273.90625,0 0,-295.5 z m 82.625,22.375 57.90625,84.71875 56.25,-84.65625 54.1875,0 -170.0625,254.9062 -55.125,0 84.84375,-127.5312 -84.84375,-127.375 z"
+           id="dropShadowOnY"
+           inkscape:connector-curvature="0"
+           mask="url(#maskOfY)"
+           sodipodi:nodetypes="cccccccccccccc" />
+      </g>
+    </g>
+  </g>
+  <g
+     transform="translate(-91.428574,-381.21933)"
+     id="textLayer"
+     inkscape:groupmode="layer"
+     inkscape:label="Text Layer">
+    <text
+       xml:space="preserve"
+       style="font-size:79.98932648px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       x="129.38341"
+       y="798.67261"
+       id="logoText"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="logoTextSpan"
+         x="129.38341"
+         y="798.67261"
+         style="font-family:Lato;-inkscape-font-specification:Lato">Yesod Web Framework</tspan></text>
+  </g>
+</svg>
