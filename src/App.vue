@@ -39,7 +39,7 @@ export default {
     },
     tweet() {
       window.open(
-        'https://twitter.com/intent/tweet?text=StackRoulette%20%3A%20Don%27t%20know%20what%20stack%20to%20use%20for%20your%20next%20webapp%3F%20Leave%20it%20to%20chance%20%F0%9F%8D%80&url=https://stackroulette.dev',
+        'https://twitter.com/intent/tweet?text=Don%27t%20know%20what%20stack%20to%20use%20for%20your%20next%20webapp?%20Leave%20it%20to%20chance%20%F0%9F%8D%80&url=https://stackroulette.dev&hashtags=webdev,webapp',
         'Tweet about StackRoulette',
         'resizable,scrollbars,status,width=600,height=600,top=50,left=50'
       );
