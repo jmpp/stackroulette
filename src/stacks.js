@@ -130,12 +130,6 @@ export const SGBD = [
     website: 'https://couchdb.apache.org/'
   },
   {
-    name: 'Elixir',
-    icon: 'elixir.svg',
-    website: 'https://elixir-lang.org/',
-    frameworks: []
-  },
-  {
     name: 'MongoDB',
     icon: 'mongodb.svg',
     website: 'https://www.mongodb.org/'
