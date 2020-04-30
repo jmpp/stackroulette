@@ -114,30 +114,192 @@ export const CSS_PREPROCESSORS = [
 ];
 
 export const SGBD = [
-  { name: 'MongoDB', icon: 'mongodb.svg', website: 'https://www.mongodb.org/' },
-  { name: 'MariaDB', icon: 'mariadb.svg', website: 'https://mariadb.org/' },
-  { name: 'MySQL', icon: 'mysql.svg', website: 'http://dev.mysql.com/' },
-  {
-    name: 'PostgreSQL',
-    icon: 'postgresql.svg',
-    website: 'http://www.postgresql.org/'
-  },
-  { name: 'Redis', icon: 'redis.svg', website: 'http://redis.io/' },
   {
     name: 'Cassandra',
     icon: 'cassandra.svg',
     website: 'http://cassandra.apache.org/'
   },
   {
+    name: 'CockroachDB',
+    icon: 'cockroachdb.svg',
+    website: 'https://www.cockroachlabs.com/'
+  },
+  {
     name: 'CouchDB',
     icon: 'couchdb.svg',
-    website: 'http://couchdb.apache.org/'
+    website: 'https://couchdb.apache.org/'
   },
-  { name: 'PouchDB', icon: 'pouchdb.svg', website: 'http://pouchdb.com/' },
-  { name: 'SQLite', icon: 'sqlite.svg', website: 'http://www.sqlite.org/' }
+  {
+    name: 'MongoDB',
+    icon: 'mongodb.svg',
+    website: 'https://www.mongodb.org/'
+  },
+  {
+    name: 'MariaDB',
+    icon: 'mariadb.svg',
+    website: 'https://mariadb.org/'
+  },
+  {
+    name: 'MySQL',
+    icon: 'mysql.svg',
+    website: 'http://dev.mysql.com/'
+  },
+  {
+    name: 'Neo4J',
+    icon: 'neo4j.svg',
+    website: 'https://neo4j.com/'
+  },
+  {
+    name: 'PostgreSQL',
+    icon: 'postgresql.svg',
+    website: 'http://www.postgresql.org/'
+  },
+  {
+    name: 'PouchDB',
+    icon: 'pouchdb.svg',
+    website: 'http://pouchdb.com/'
+  },
+  {
+    name: 'Redis',
+    icon: 'redis.svg',
+    website: 'http://redis.io/'
+  },
+  {
+    name: 'RethinkDB',
+    icon: 'rethinkdb.svg',
+    website: 'https://rethinkdb.com/'
+  },
+  {
+    name: 'SQLite',
+    icon: 'sqlite.svg',
+    website: 'http://www.sqlite.org/'
+  },
+  {
+    name: 'Timescale',
+    icon: 'timescale.svg',
+    website: 'https://www.timescale.com/'
+  }
 ];
 
 export const BACKEND_ENVIRONMENTS = [
+  {
+    name: 'C#',
+    icon: 'c-sharp.svg',
+    website: 'https://docs.microsoft.com/en-us/dotnet/csharp/',
+    frameworks: [
+      {
+        name: 'ASP.NET',
+        icon: 'dotnet.svg',
+        website: 'https://dotnet.microsoft.com/apps/aspnet'
+      }
+    ]
+  },
+  {
+    name: 'Crystal',
+    icon: 'crystal.svg',
+    website: 'https://crystal-lang.org/',
+    frameworks: [
+      {
+        name: 'Amber',
+        icon: 'amber.png',
+        website: 'https://amberframework.org/'
+      },
+      {
+        name: 'Lucky',
+        icon: 'lucky.png',
+        website: 'https://luckyframework.org/'
+      },
+      {
+        name: 'Kemal',
+        icon: 'kemal.png',
+        website: 'https://kemalcr.com/'
+      },
+      {
+        name: 'Spider-Gazelle',
+        icon: 'spider-gazelle.svg',
+        website: 'https://spider-gazelle.net/'
+      },
+      {
+        name: 'Shivneri',
+        icon: 'shivneri.svg',
+        website: 'https://shivneriforcrystal.com/'
+      }
+    ]
+  },
+  {
+    name: 'Go',
+    icon: 'go.svg',
+    website: 'https://golang.org/',
+    frameworks: [
+      {
+        name: 'Buffalo',
+        icon: 'buffalo.png',
+        website: 'https://gobuffalo.io/'
+      },
+      {
+        name: 'Gin',
+        icon: 'no-icon.png',
+        website: 'https://github.com/gin-gonic/gin'
+      },
+      {
+        name: 'Gorilla Web Toolkit',
+        icon: 'gorilla.png',
+        website: 'http://www.gorillatoolkit.org/'
+      },
+      {
+        name: 'Macaron',
+        icon: 'no-icon.png',
+        website: 'https://go-macaron.com/'
+      }
+    ]
+  },
+  {
+    name: 'Haskell',
+    icon: 'haskell.svg',
+    website: 'https://www.haskell.org/',
+    frameworks: [
+      {
+        name: 'Happstack',
+        icon: 'no-icon.png',
+        website: 'http://happstack.com/'
+      },
+      {
+        name: 'Miso',
+        icon: 'miso.png',
+        website: 'https://haskell-miso.org/'
+      },
+      {
+        name: 'Scotty',
+        icon: 'no-icon.png',
+        website: 'https://github.com/scotty-web/scotty'
+      },
+      {
+        name: 'Snap Framework',
+        icon: 'no-icon.png',
+        website: 'http://snapframework.com/'
+      },
+      {
+        name: 'Yesod',
+        icon: 'yesod.svg',
+        website: 'https://www.yesodweb.com/'
+      }
+    ]
+  },
+  {
+    name: 'Java',
+    icon: 'java.svg',
+    website: 'https://www.java.com/',
+    frameworks: [
+      { name: 'Grails', icon: 'grails.svg', website: 'https://grails.org/' },
+      { name: 'Spark', icon: 'spark.svg', website: 'http://sparkjava.com/' },
+      { name: 'Spring', icon: 'spring.svg', website: 'https://spring.io/' },
+      {
+        name: 'Play',
+        icon: 'play.svg',
+        website: 'https://www.playframework.com/'
+      }
+    ]
+  },
   {
     name: 'Node.js',
     icon: 'nodejs.svg',
@@ -167,6 +329,28 @@ export const BACKEND_ENVIRONMENTS = [
         name: 'KeystoneJS',
         icon: 'keystonejs.svg',
         website: 'https://www.keystonejs.com/'
+      }
+    ]
+  },
+  {
+    name: 'OCaml',
+    icon: 'ocaml.svg',
+    website: 'https://ocaml.org/',
+    frameworks: [
+      {
+        name: 'Ocsigen Eliom',
+        icon: 'no-icon.png',
+        website: 'https://ocsigen.org/eliom/'
+      },
+      {
+        name: 'Opium',
+        icon: 'no-icon.png',
+        website: 'https://github.com/rgrinberg/opium'
+      },
+      {
+        name: 'Ocaml-Webmachine',
+        icon: 'no-icon.png',
+        website: 'https://github.com/inhabitedtype/ocaml-webmachine'
       }
     ]
   },
@@ -255,7 +439,11 @@ export const BACKEND_ENVIRONMENTS = [
         icon: 'turbogears.png',
         website: 'https://www.turbogears.org/'
       },
-      { name: 'web2py', icon: 'web2py.png', website: 'http://web2py.com/' }
+      {
+        name: 'web2py',
+        icon: 'web2py.png',
+        website: 'http://web2py.com/'
+      }
     ]
   },
   {
@@ -263,44 +451,30 @@ export const BACKEND_ENVIRONMENTS = [
     icon: 'ruby.svg',
     website: 'https://www.ruby-lang.org/',
     frameworks: [
-      { name: 'Rails', icon: 'rails.svg', website: 'https://rubyonrails.org/' },
-      {
-        name: 'Sinatra',
-        icon: 'sinatra.svg',
-        website: 'http://sinatrarb.com/'
-      },
       {
         name: 'Grape',
         icon: 'grape.svg',
         website: 'http://www.ruby-grape.org/'
       },
-      { name: 'Hanami', icon: 'hanami.svg', website: 'https://hanamirb.org/' }
-    ]
-  },
-  {
-    name: 'C#',
-    icon: 'c-sharp.svg',
-    website: 'https://docs.microsoft.com/en-us/dotnet/csharp/',
-    frameworks: [
       {
-        name: 'ASP.NET',
-        icon: 'dotnet.svg',
-        website: 'https://dotnet.microsoft.com/apps/aspnet'
-      }
-    ]
-  },
-  {
-    name: 'Java',
-    icon: 'java.svg',
-    website: 'https://www.java.com/',
-    frameworks: [
-      { name: 'Grails', icon: 'grails.svg', website: 'https://grails.org/' },
-      { name: 'Spark', icon: 'spark.svg', website: 'http://sparkjava.com/' },
-      { name: 'Spring', icon: 'spring.svg', website: 'https://spring.io/' },
+        name: 'Hanami',
+        icon: 'hanami.svg',
+        website: 'https://hanamirb.org/'
+      },
       {
-        name: 'Play',
-        icon: 'play.svg',
-        website: 'https://www.playframework.com/'
+        name: 'Padrino',
+        icon: 'padrino.svg',
+        website: 'http://padrinorb.com/'
+      },
+      {
+        name: 'Rails',
+        icon: 'rails.svg',
+        website: 'https://rubyonrails.org/'
+      },
+      {
+        name: 'Sinatra',
+        icon: 'sinatra.svg',
+        website: 'http://sinatrarb.com/'
       }
     ]
   }
