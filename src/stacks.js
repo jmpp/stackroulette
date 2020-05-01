@@ -49,11 +49,6 @@ export const JS_PREPROCESSORS = [
     website: 'http://coffeescript.org/'
   },
   {
-    name: 'JSX',
-    icon: 'jsx.svg',
-    website: 'https://reactjs.org/docs/glossary.html#jsx'
-  },
-  {
     name: 'ClojureScript',
     icon: 'cljs.svg',
     website: 'https://clojurescript.org/'
