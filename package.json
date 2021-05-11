@@ -11,7 +11,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "splashy": "^5.0.2",
     "vue": "^2.6.11",
     "vue-confetti": "^2.0.8",
