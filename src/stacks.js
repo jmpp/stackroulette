@@ -29,6 +29,11 @@ export const JS_FRAMEWORKS = [
     name: 'Ampersand.js',
     icon: 'ampersand.svg',
     website: 'https://ampersandjs.com/'
+  },
+  {
+    name: 'Preact',
+    icon: 'preact.svg',
+    website: 'https://preactjs.com/'
   }
 ];
 
