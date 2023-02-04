@@ -29,6 +29,11 @@ export const JS_FRAMEWORKS = [
     name: 'Ampersand.js',
     icon: 'ampersand.svg',
     website: 'https://ampersandjs.com/'
+  },
+  {
+    name: 'Preact',
+    icon: 'preact.svg',
+    website: 'https://preactjs.com/'
   }
 ];
 
@@ -233,7 +238,7 @@ export const BACKEND_ENVIRONMENTS = [
       },
       {
         name: 'Gin',
-        icon: 'no-icon.png',
+        icon: 'gin.png',
         website: 'https://github.com/gin-gonic/gin'
       },
       {
