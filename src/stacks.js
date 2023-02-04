@@ -238,7 +238,7 @@ export const BACKEND_ENVIRONMENTS = [
       },
       {
         name: 'Gin',
-        icon: 'no-icon.png',
+        icon: 'gin.png',
         website: 'https://github.com/gin-gonic/gin'
       },
       {
